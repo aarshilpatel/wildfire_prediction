@@ -243,9 +243,9 @@ class WildfireMapHomeEx extends React.Component {
                             <Button onClick={() => this.setState({mapChoice :'Scatter'})}>
                                 ScatterMap
                             </Button>
-                            <Button onClick={() => this.setState({mapChoice :'Icon'})}>
+                            {/* <Button onClick={() => this.setState({mapChoice :'Icon'})}>
                                 Icon Layer
-                            </Button>
+                            </Button> */}
                             <Button onClick={() => this.setState({openDrawer: !this.state.openDrawer})}>
                                 ...
                             </Button>
@@ -257,13 +257,13 @@ class WildfireMapHomeEx extends React.Component {
                     ?<WildfireScatterMap 
                     mapStyle={this.state.mapStyle}
                     wildfireData={this.state.wildfireFullData}/>:null}
-                    {this.state.mapChoice === 'Icon'
+                    {/* {this.state.mapChoice === 'Icon'
                     ?<WildfireIconLayer
                     mapStyle={this.state.mapStyle}
                     hoverInfo={this.state.hoverInfo}
                     hideTooltip = {this.hideTooltip}
                     expandTooltip = {this.expandTooltip}
-                    wildfireData={this.state.wildfireFullData}/>:null}
+                    wildfireData={this.state.wildfireFullData}/>:null} */}
                     {this.state.mapChoice === 'Heatmap'
                     ?<WildfireHeatMap 
                     mapStyle={this.state.mapStyle}
